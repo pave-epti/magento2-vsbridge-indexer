@@ -222,7 +222,6 @@ class Product extends AbstractMapping implements MappingInterface
     private function getCategoryMapping(): array
     {
         return  [
-            'type' => 'nested',
             'properties' => [
                 'category_id' => ['type' => FieldInterface::TYPE_LONG],
                 'position' => ['type' => FieldInterface::TYPE_LONG],
